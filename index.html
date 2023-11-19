@@ -11,13 +11,13 @@
     <!-- MODERN NORMALIZE -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css">
     <!-- OUR STYLESHEET -->
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/styles1.css">
 </head>
 <body>
     
 <!-- PAGE HEADER -->
     <header class="page-header">
-        <div class="container">
+        <div class="container page-header-container">
         <nav class="page-navigation">
         <a class="logotype link" href="./index.html">Web<span class="logo-span">Studio</span></a>
         <ul class="menu list">
@@ -32,6 +32,14 @@
             </li>
         </ul>
         </nav>
+        <button class="mobile-open-button" type="button">
+            <svg class="mobile-open-button-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <use href="./images/icons.svg#icon-burger1"></use>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.59961 6.00078C3.59961 5.68252 3.72604 5.3773 3.95108 5.15225C4.17612 4.92721 4.48135 4.80078 4.79961 4.80078H19.1996C19.5179 4.80078 19.8231 4.92721 20.0481 5.15225C20.2732 5.3773 20.3996 5.68252 20.3996 6.00078C20.3996 6.31904 20.2732 6.62427 20.0481 6.84931C19.8231 7.07435 19.5179 7.20078 19.1996 7.20078H4.79961C4.48135 7.20078 4.17612 7.07435 3.95108 6.84931C3.72604 6.62427 3.59961 6.31904 3.59961 6.00078Z" fill="#2F2F37"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.59961 12.0008C3.59961 11.6825 3.72604 11.3773 3.95108 11.1523C4.17612 10.9272 4.48135 10.8008 4.79961 10.8008H19.1996C19.5179 10.8008 19.8231 10.9272 20.0481 11.1523C20.2732 11.3773 20.3996 11.6825 20.3996 12.0008C20.3996 12.319 20.2732 12.6243 20.0481 12.8493C19.8231 13.0744 19.5179 13.2008 19.1996 13.2008H4.79961C4.48135 13.2008 4.17612 13.0744 3.95108 12.8493C3.72604 12.6243 3.59961 12.319 3.59961 12.0008Z" fill="#2F2F37"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.59961 18.0008C3.59961 17.6825 3.72604 17.3773 3.95108 17.1523C4.17612 16.9272 4.48135 16.8008 4.79961 16.8008H19.1996C19.5179 16.8008 19.8231 16.9272 20.0481 17.1523C20.2732 17.3773 20.3996 17.6825 20.3996 18.0008C20.3996 18.319 20.2732 18.6243 20.0481 18.8493C19.8231 19.0744 19.5179 19.2008 19.1996 19.2008H4.79961C4.48135 19.2008 4.17612 19.0744 3.95108 18.8493C3.72604 18.6243 3.59961 18.319 3.59961 18.0008Z" fill="#2F2F37"/>
+            </svg>
+        </button>
 
         <address class="header-contacts">
         <ul class="contact-header-list list">
@@ -49,7 +57,7 @@
 <main>
 
 <!-- HERO SECTION -->
-<section class="hero section">
+ <section class="hero section">
     <div class="container">
         <h1 class="main-title">Effective Solutions for Your Business</h1>
         <button class="button" type="button">Order Service</button>
@@ -103,11 +111,11 @@
 
 <!-- OUR TEAM -->
 <section class="our-team section">
-<div class="container">
+<div class="team-container container">
 <h2 class="second-heading-team">Our Team</h2>
 <ul class="our-team-list list">
     <li class="our-team-list-item"> 
-        <img class="our-team-img" src="./images/img.jpg" alt="Mark" width="264" height="260"/>
+        <img class="our-team-img" srcset="./images/img@2.png" src="./images/img.jpg" alt="Mark" width="264" height="260"/>
         <div class="div-team">
             <h3 class="third-heading">Mark Guerrero</h3>
             <p class="paragraph-item">Product Designer</p>
@@ -156,7 +164,7 @@
     </li>
 
     <li class="our-team-list-item"> 
-        <img class="our-team-img" src="./images/img-2.jpg" alt="Tom" width="264" height="260"/>
+        <img class="our-team-img" srcset="./images/img@2-2.png" src="./images/img-2.jpg" alt="Tom" width="264" height="260"/>
         <div class="div-team">
             <h3 class="third-heading">Tom Ford</h3>
             <p class="paragraph-item">Frontend Developer</p>
@@ -222,7 +230,7 @@
     </li>
 
     <li class="our-team-list-item"> 
-        <img class="our-team-img" src="./images/img-3.jpg" alt="Camila" width="264" height="260"/>
+        <img class="our-team-img" srcset="./images/img@2-3.png" src="./images/img-3.jpg" alt="Camila" width="264" height="260"/>
         <div class="div-team">
             <h3 class="third-heading">Camila Garcia</h3>
             <p class="paragraph-item">Marketing</p>
@@ -288,7 +296,7 @@
     </li>
 
     <li class="our-team-list-item"> 
-        <img class="our-team-img" src="./images/img-4.jpg" alt="Daniel" width="264" height="260"/>
+        <img class="our-team-img" srcset="./images/img@2-4.png" src="./images/img-4.jpg" alt="Daniel" width="264" height="260"/>
         <div class="div-team">
             <h3 class="third-heading">Daniel Wilson</h3>
             <p class="paragraph-item">UI Designer</p>
@@ -365,7 +373,7 @@
 
         <li class="portfolio-list-item">
             <div class="portfolio-list-item-overlay">
-                    <img class="portfolio-list-img" src="./images/img-banking-app.jpg" alt="banking-app" width="360" height="300">
+                    <img class="portfolio-list-img" srcset="./images/img-banking-app@2.png" src="./images/img-banking-app.jpg" alt="banking-app" width="360" height="300">
                     <p class="overlay-text">
                         14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
                     </p>
@@ -380,7 +388,7 @@
 
         <li class="portfolio-list-item">
             <div class="portfolio-list-item-overlay">
-                <img class="portfolio-list-img" src="./images/img-cashless-payment.jpg" alt="cashless-payment" width="360" height="300">
+                <img class="portfolio-list-img" srcset="./images/img-cashless-payment@2.png" src="./images/img-cashless-payment.jpg" alt="cashless-payment" width="360" height="300">
                 <p class="overlay-text">
                     14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
                 </p>
@@ -393,7 +401,7 @@
 
         <li class="portfolio-list-item">
             <div class="portfolio-list-item-overlay">
-                <img class="portfolio-list-img" src="./images/img-meditation-app.jpg" alt="meditation-app" width="360" height="300">
+                <img class="portfolio-list-img" srcset="./images/img-meditation-app@2.png" src="./images/img-meditation-app.jpg" alt="meditation-app" width="360" height="300">
                 <p class="overlay-text">
                     14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
                 </p>
@@ -406,7 +414,7 @@
 
         <li class="portfolio-list-item">
             <div class="portfolio-list-item-overlay">
-                <img class="portfolio-list-img" src="./images/img-taxi-servise.jpg" alt="taxi-servise" width="360" height="300">
+                <img class="portfolio-list-img" srcset="./images/img-taxi-servise@2.png" src="./images/img-taxi-servise.jpg" alt="taxi-servise" width="360" height="300">
                 <p class="overlay-text">
                     14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
                 </p>
@@ -419,7 +427,7 @@
 
         <li class="portfolio-list-item">
             <div class="portfolio-list-item-overlay">
-                <img class="portfolio-list-img" src="./images/img-screen-illustrations.jpg" alt="screen-illustrations" width="360" height="300">
+                <img class="portfolio-list-img" srcset="./images/img-screen-illustrations@2.png" src="./images/img-screen-illustrations.jpg" alt="screen-illustrations" width="360" height="300">
                 <p class="overlay-text">
                     14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
                 </p>
@@ -432,7 +440,7 @@
 
         <li class="portfolio-list-item">
             <div class="portfolio-list-item-overlay">
-                <img class="portfolio-list-img" src="./images/img-online-courses.jpg" alt="online-courses" width="360" height="300">
+                <img class="portfolio-list-img" srcset="./images/img-online-courses@2.png" src="./images/img-online-courses.jpg" alt="online-courses" width="360" height="300">
                 <p class="overlay-text">
                     14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
                  </p>
@@ -542,6 +550,8 @@
     </div>
 </footer>
 
+
+<!-- BACKDROP SECTION -->
 <div class="backdrop is-open">
     <div class="modal">
         <button class="modal-close-button" 
@@ -641,7 +651,102 @@
 
         </form>
     </div>
+</div> 
+
+<!-- MOBILE MENU -->
+
+<div class="mobile-menu is-open">
+    <div class="container mobile-menu-container">
+        <button class="mobile-menu-close-button" 
+        type="button"
+        aria-label="mobile menu close button">
+            <svg class="mobile-menu-close-button-icon" width="8" height="8">
+                <use href="./images/icons.svg#icon-close-botton">
+                </use>
+            </svg>
+    </button>
+        <nav class="mobile-menu-navigation">
+            <ul class="mobile-menu-navigation-list list">
+                <li class="mobile-menu-navigation-item">
+                    <a class="mobile-menu-navigation-link current-page" href="./index.html">Studio</a></li>
+                <li class="mobile-menu-navigation-item">
+                    <a class="mobile-menu-navigation-link" href="">Portfolio</a></li>
+                <li class="mobile-menu-navigation-item">
+                    <a class="mobile-menu-navigation-link" href="">Contacts</a></li>
+            </ul>
+        </nav>
+        
+            <address class="mobile-menu-contacts">
+            <ul class="mobile-menu-contacts-list list">
+                <li class="mobile-menu-contacts-item">
+                    <a class="mobile-menu-contact link current-page" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+                <li class="mobile-menu-contacts-item">
+                    <a class="mobile-menu-contact link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            </ul>
+            </address>
+
+            <ul class="mobile-social-list list">
+                <li class="mobile-social-list-item">
+                    <a href="" class="mobile-social-list-link">
+                        <svg class="mobile-social-list-icon" viewBox="0 0 32 32" width="24" height="24">
+                            <use href="./images/sprite.svg#icon-instagram"></use>
+                            <path d="M31.969 9.408c-0.075-1.7-0.35-2.869-0.744-3.882-0.406-1.075-1.031-2.038-1.85-2.838-0.8-0.813-1.769-1.444-2.832-1.844-1.019-0.394-2.182-0.669-3.882-0.744-1.713-0.081-2.257-0.1-6.601-0.1s-4.888 0.019-6.595 0.094c-1.7 0.075-2.869 0.35-3.882 0.744-1.075 0.406-2.038 1.031-2.838 1.85-0.813 0.8-1.444 1.769-1.844 2.832-0.394 1.019-0.669 2.182-0.744 3.882-0.081 1.713-0.1 2.257-0.1 6.601s0.019 4.888 0.094 6.595c0.075 1.7 0.35 2.869 0.744 3.882 0.406 1.075 1.038 2.038 1.85 2.838 0.8 0.813 1.769 1.444 2.832 1.844 1.019 0.394 2.182 0.669 3.882 0.744 1.706 0.075 2.25 0.094 6.595 0.094s4.888-0.019 6.595-0.094c1.7-0.075 2.869-0.35 3.882-0.744 2.151-0.831 3.851-2.532 4.682-4.682 0.394-1.019 0.669-2.182 0.744-3.882 0.075-1.707 0.094-2.25 0.094-6.595s-0.006-4.888-0.081-6.595zM29.087 22.473c-0.069 1.563-0.331 2.407-0.55 2.969-0.538 1.394-1.644 2.5-3.038 3.038-0.563 0.219-1.413 0.481-2.969 0.55-1.688 0.075-2.194 0.094-6.464 0.094s-4.782-0.019-6.464-0.094c-1.563-0.069-2.407-0.331-2.969-0.55-0.694-0.256-1.325-0.663-1.838-1.194-0.531-0.519-0.938-1.144-1.194-1.838-0.219-0.563-0.481-1.413-0.55-2.969-0.075-1.688-0.094-2.194-0.094-6.464s0.019-4.782 0.094-6.464c0.069-1.563 0.331-2.407 0.55-2.969 0.256-0.694 0.663-1.325 1.2-1.838 0.519-0.531 1.144-0.938 1.838-1.194 0.563-0.219 1.413-0.481 2.969-0.55 1.688-0.075 2.194-0.094 6.464-0.094 4.276 0 4.782 0.019 6.464 0.094 1.563 0.069 2.407 0.331 2.969 0.55 0.694 0.256 1.325 0.662 1.838 1.194 0.531 0.519 0.938 1.144 1.194 1.838 0.219 0.563 0.481 1.413 0.55 2.969 0.075 1.688 0.094 2.194 0.094 6.464s-0.019 4.77-0.094 6.458z"></path>
+                            <path d="M16.059 7.783c-4.538 0-8.22 3.682-8.22 8.22s3.682 8.22 8.22 8.22c4.538 0 8.22-3.682 8.22-8.22s-3.682-8.22-8.22-8.22zM16.059 21.335c-2.944 0-5.332-2.388-5.332-5.332s2.388-5.332 5.332-5.332c2.944 0 5.332 2.388 5.332 5.332s-2.388 5.332-5.332 5.332z"></path>
+                            <path d="M26.524 7.458c0 1.060-0.859 1.919-1.919 1.919s-1.919-0.859-1.919-1.919c0-1.060 0.859-1.919 1.919-1.919s1.919 0.859 1.919 1.919z"></path>                         
+                        </svg> 
+                    </a>
+                </li>
+            
+                <li class="mobile-social-list-item">
+                    <a href="" class="mobile-social-list-link">
+                        <svg class="mobile-social-list-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16" fill="none">
+                            <path d="M16 3.03894C15.405 3.29994 14.771 3.47294 14.11 3.55694C14.79 3.15094 15.309 2.51294 15.553 1.74394C14.919 2.12194 14.219 2.38894 13.473 2.53794C12.871 1.89694 12.013 1.49994 11.077 1.49994C9.261 1.49994 7.799 2.97394 7.799 4.78094C7.799 5.04094 7.821 5.29094 7.875 5.52894C5.148 5.39594 2.735 4.08894 1.114 2.09794C0.831 2.58894 0.665 3.15094 0.665 3.75594C0.665 4.89194 1.25 5.89894 2.122 6.48194C1.595 6.47194 1.078 6.31894 0.64 6.07794C0.64 6.08794 0.64 6.10094 0.64 6.11394C0.64 7.70794 1.777 9.03194 3.268 9.33694C3.001 9.40994 2.71 9.44494 2.408 9.44494C2.198 9.44494 1.986 9.43294 1.787 9.38894C2.212 10.6879 3.418 11.6429 4.852 11.6739C3.736 12.5469 2.319 13.0729 0.785 13.0729C0.516 13.0729 0.258 13.0609 0 13.0279C1.453 13.9649 3.175 14.4999 5.032 14.4999C11.068 14.4999 14.368 9.49994 14.368 5.16594C14.368 5.02094 14.363 4.88094 14.356 4.74194C15.007 4.27994 15.554 3.70294 16 3.03894Z"/>
+                            <defs>
+                           
+                            <rect width="24" height="24" fill="white"/>
+                          
+                            </defs>
+                            <use href="./images/icons/sprite.svg#icon-twitter"></use>
+                        </svg> 
+                    </a>
+                </li>
+            
+                <li class="mobile-social-list-item">
+                    <a href="" class="mobile-social-list-link">
+                        <svg class="mobile-social-list-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16" fill="none">
+                            <path d="M10.6647 2.65661H12.1254V0.112606C11.8734 0.077939 11.0067 -6.10352e-05 9.99736 -6.10352e-05C7.89136 -6.10352e-05 6.4487 1.32461 6.4487 3.75927V5.99994H4.12469V8.84394H6.4487V15.9999H9.29803V8.84461H11.528L11.882 6.00061H9.29736V4.04127C9.29803 3.21927 9.51936 2.65661 10.6647 2.65661Z" fill="#F4F4FD"/>
+                            <defs>
+                       
+                            <rect width="24" height="24" fill="white"/>
+                 
+                            </defs>
+                            <use href="./images/icons/sprite.svg#icon-twitter"></use>
+                        </svg> 
+                    </a>
+                </li>
+            
+                <li class="mobile-social-list-item">
+                    <a href="" class="mobile-social-list-link">
+                        <svg class="mobile-social-list-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16" fill="none">
+                            <g clip-path="url(#clip0_610505_850)">
+                            <path d="M15.9961 16V15.9993H16.0001V10.1313C16.0001 7.26065 15.3821 5.04932 12.0261 5.04932C10.4128 5.04932 9.33009 5.93465 8.88809 6.77398H8.84143V5.31732H5.65942V15.9993H8.97276V10.71C8.97276 9.31732 9.23676 7.97065 10.9614 7.97065C12.6608 7.97065 12.6861 9.55998 12.6861 10.7993V16H15.9961Z" fill="#F4F4FD"/>
+                            <path d="M0.264038 5.31793H3.58137V15.9999H0.264038V5.31793Z" fill="#F4F4FD"/>
+                            <path d="M1.92139 -6.10352e-05C0.860728 -6.10352e-05 6.10352e-05 0.860606 6.10352e-05 1.92127C6.10352e-05 2.98194 0.860728 3.86061 1.92139 3.86061C2.98206 3.86061 3.84273 2.98194 3.84273 1.92127C3.84206 0.860606 2.98139 -6.10352e-05 1.92139 -6.10352e-05V-6.10352e-05Z" fill="#F4F4FD"/>
+                            </g>
+                            <defs>
+                           
+                            <rect width="24" height="24" fill="white"/>
+                        
+                            </defs>
+                            <use href="./images/icons/sprite.svg#icon-linkedin"></use>
+                        </svg> 
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
 </div>
+
 
 </body>
 </html>
