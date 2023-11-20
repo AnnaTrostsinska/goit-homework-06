@@ -19,6 +19,7 @@ padding-left: 0;
 
 img {
 display: block;
+width: 100%;
 }
 
 address {
@@ -31,6 +32,9 @@ address {
 
 .link {
     text-decoration: none;
+    color: #2E2F42;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 body {
@@ -40,11 +44,8 @@ body {
 }
 
 .container {
-    width: 1158px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 .second-heading {
@@ -63,6 +64,20 @@ body {
     padding: 96px 0;
   }
 
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+  
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
 /* ============== /COMMON STYLES ============== */
 
 /* ============== HEADER STYLES ============== */
@@ -71,10 +86,35 @@ body {
     margin-right: 0;
   }
 
-.menu-link.current-page::after {
-    height: 4px;
+.menu-link.current-page.link {
+    position: relative;
+    overflow: hidden;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-link.current-page.link:active {
+    color: #404BBF;
+}
+
+.menu-link.current-page.link::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 4px;
+        background-color: #404BBF;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: -17px;
+        bottom: -1px;
+        border-radius: 2px;
+        position: absolute;
+        left: 0;
     }
 
+    .contact-item-link {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
 /* ============== MOBILE STYLES ============== */
 
 .container {
@@ -275,6 +315,7 @@ body {
     line-height: 1.07;
     letter-spacing: 0.02em;
     text-align: center;
+    text-transform: capitalize;
 }
 
 .button:hover,
@@ -358,6 +399,31 @@ body {
 
 /* ============== BENEFITS STYLES ============== */
 
+.benefits {
+    background-color: #FFFFFF;
+    padding: 96px 0;
+}
+
+@media screen and (min-width: 1158px) {
+    .benefits {
+        padding: 120px 0;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .benefits-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 72px 24px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .benefits-list-item {
+
+    }
+}
+
 .benefits-icon {
     display: none;
 }
@@ -380,8 +446,12 @@ body {
     letter-spacing: 0.02em;
 }
 
+.benefits-list-item:not(:last-child) {
+    margin-bottom: 72px;
+}
+
 @media screen and (max-width: 767px) {
-    .benefits-list-item-item:not(:last-child) {
+    .benefits-list-item:not(:last-child) {
       margin-bottom: 72px;
     }
   }
@@ -389,6 +459,7 @@ body {
   @media screen and (min-width: 768px) {
     .benefits-list-title {
       text-align: left;
+
     }
 
     .benefits-list-item {
@@ -425,6 +496,20 @@ body {
   .benefits-list-text {
     font-weight: 400;
   }
+}
+
+@media screen and (min-width: 1158px) {
+    .benefits-list-title {
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+    }
+
+    .benefits-list-item {
+        width: calc((100% - 72px) / 4);
+    }
 }
 
 /* ============== TEAM STYLES ============== */
@@ -570,7 +655,7 @@ body {
 .portfolio-list-item-item:hover .overlay-text {
     transform: translateY(0%);
   }
-  
+
 .div-portfolio {
     border: 1px solid #e7e9fc;
   border-top: none;
@@ -600,6 +685,17 @@ body {
 .portfolio-image-container {
     position: relative;
   overflow: hidden;
+}
+
+.portfolio-list-item-overlay {
+    position: relative;
+    overflow: hidden;
+    box-shadow: 
+    0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 
+    0px 2px 1px rgba(46, 47, 66, 0.08);
+    transform: translateY(0%);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .overlay-text {
@@ -1072,6 +1168,11 @@ body {
     text-decoration: underline;
 }
 
+.review-form-checkbox-wrapper {
+    margin-bottom: 24px;
+    display: block;
+}
+
 .review-form-button {
     display: block;
     margin: 0 auto;
@@ -1099,6 +1200,25 @@ body {
     border: none;
 }
 
+.review-form-button {
+    min-width: 169px;
+    height: 56px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    padding: 16px 32px;
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+    background-color: #4D5AE5; 
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.review-form-button:hover,
+.review-form-button:focus {
+    background-color: #404BBF; 
+}
+
 /* ============== MOBILE MENU STYLES ============== */
 
 .mobile-menu {
@@ -1121,6 +1241,35 @@ body {
     opacity: 1;
     visibility: visible;
     pointer-events: all;
+}
+
+.mobile-menu-close-button {
+    position: absolute;
+    display: flex;
+    right: 24px;
+    top: 24px;
+    background-color: transparent;
+    padding: 0;
+    line-height: 0;
+    fill: #2E2F42;
+    width: 24px;
+    height: 24px;
+    align-items: center;
+    justify-content: center; 
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    background-color: #E7E9FC;
+    padding: 0px;
+    line-height: 0;
+    fill: #2E2F42;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+}
+
+.mobile-menu-close-button:hover,
+.mobile-menu-close-button:focus {
+    fill: #FFF;
+    background-color: #404BBF;
+    border-color: transparent;
 }
 
 .mobile-menu-navigation-link {
@@ -1162,3 +1311,40 @@ body {
     gap: 40px;
 }
 
+.mobile-social-list {
+    display: flex;
+    gap: 40px;
+    line-height: 0;
+    justify-content: center;
+    margin: 8px 16px 0;
+}
+
+.mobile-social-list-link:hover,
+.mobile-social-list-link:focus {
+    background-color: #404bbf;
+}
+
+.mobile-social-list-link {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #4D5AE5;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);  
+}
+
+.mobile-social-list-icon {
+    fill: #f4f4fd;
+    width: 24px;
+    height: 24px;
+}
+
+.mobile-menu-navigation-item:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+.mobile-menu-navigation {
+    margin-bottom: 168px;
+}
