@@ -144,13 +144,6 @@ body {
     align-items: center;
   }
 
-  @media screen and (max-width: 767px) {
-    .mobile-open-button {
-        padding-top: 16px;
-        padding-bottom: 16px;
-    }
-  }
-
 /* ============== HERO STYLES ============== */
 
 .hero {
@@ -243,12 +236,6 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
-
-@media screen and (max-width: 767px) {
-    .benefits-list-item:not(:last-child) {
-      margin-bottom: 72px;
-    }
-  }
 
 /* ============== TEAM STYLES ============== */
 
@@ -370,21 +357,6 @@ body {
   letter-spacing: 0.02em;
   color: #434455;
 }
-
-@media screen and (max-width: 767px) {
-    .portfolio-list-item:not(:last-child) {
-      margin-bottom: 48px;
-    }
-    .overlay-text {
-        display: none;
-    }
-    .our-team-list-item:not(:last-child) {
-        margin-bottom: 72px;
-      }
-      .portfolio-list-item:not(:last-child) {
-        margin-bottom: 48px;
-      }
-  }
 
 /* ============== FOOTER STYLES ============== */
 
@@ -518,15 +490,37 @@ body {
 }
 
 @media screen and (max-width: 767px) {
+    .portfolio-list-item:not(:last-child) {
+        margin-bottom: 48px;
+      }
+      .overlay-text {
+          display: none;
+      }
+      .our-team-list-item:not(:last-child) {
+          margin-bottom: 72px;
+        }
+        .portfolio-list-item:not(:last-child) {
+          margin-bottom: 48px;
+        }
+
     .footer-button-div {
         display: flex;
         justify-content: center;
+    }
+
+    .mobile-open-button {
+        padding-top: 16px;
+        padding-bottom: 16px;
     }
     
     .footer-button-icon {
         margin-left: 16px;
     }
     
+    .benefits-list-item:not(:last-child) {
+        margin-bottom: 72px;
+      }
+
     .logotype-link-footer {
         display: block;
         text-align: center;
@@ -548,9 +542,6 @@ body {
         margin-bottom: 16px;
     }
 }
-
-
-
 
 /* ============== MODAL STYLES ============== */
 
@@ -957,8 +948,7 @@ body {
     .menu {
         display: flex;
         justify-content: space-between;
-        gap: 40px;
-        column-gap: 40px;
+        column-gap: 12px;
     }
 
     .menu-list {
@@ -1160,4 +1150,148 @@ body {
         padding-top: 24px;
         padding-bottom: 24px;
     }
+
+    .hero {
+        padding: 188px 0;
+    }
+
+    .main-title {
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 56px;
+        font-weight: 700;
+        line-height: 1.07;
+        max-width: 496px;
+        margin-left: auto;
+        margin-right: auto;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+        margin-bottom: 48px;
+    }
+
+    .benefits-list-item {
+        width: calc((100% - 72px) / 4);
+    }
+
+    .benefits-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 112px;
+        background-color: #f4f4fd;
+        border-radius: 4px;
+        margin-bottom: 8px; 
+        border: 1px solid #8E8F99;
+    }
+
+    .benefits-list-title {
+        text-align: left;
+        font-weight: 500;
+    }
+
+    .benefits-list-text {
+        font-size: 15.5px;
+        font-weight: 400;
+        line-height: 1.5; 
+        letter-spacing: 0.02em;
+    }
+
+    .our-team-list {
+        display: flex;
+        flex-wrap: nowrap;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .portfolio-list-item {
+        width: calc((100% - 48px)/3);
+    }
+
+    .portfolio-list-item:hover .overlay-text {
+        transform: translateY(0%);
+    }
+
+    .portfolio-list-item-overlay {
+    position: relative;
+    overflow: hidden;
+    box-shadow: 
+    0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 
+    0px 2px 1px rgba(46, 47, 66, 0.08);
+    transform: translateY(0%);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.overlay-text {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding:  40px 32px;
+    background-color: #4D5AE5;
+    color: #F4F4FD;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.overlay-text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.page-footer {
+    padding: 100px 0;
+}
+
+.page-footer.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.tablet-footer {
+    display: flex;
+}
+
+.footer-first-div {
+    display: block;
+    margin-right:  120px
+}
+
+.footer-paragraph {
+    width: 264px;
+}
+
+.footer-container {
+    display: flex;
+    gap: 80px;
+}
+
+.footer-second-paragraph {
+    text-align: left;
+}
+
+.footer-subscribe-text {
+    text-align: left;
+}
+ 
+.footer-subscribe-form {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.footer-button {
+    padding-top: 0;
+}
+
+
+
+.footer-subscribe-input {
+    width: 264px;
+}
+
 }
