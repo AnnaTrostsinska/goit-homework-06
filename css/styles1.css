@@ -109,14 +109,6 @@ body {
 
 /* ============== MOBILE STYLES ============== */
 
-@media screen and (min-width: 480px) {
-    .container {
-      width: 367px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-  }
-
 .menu {
     display: none;
   }
@@ -166,7 +158,7 @@ body {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/mob-bg-min.png);    
+      url(../images/images/dark-bg-tablet.jpg);    
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -182,7 +174,7 @@ body {
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
         ),
-        url(../images/mob-bg@2x-min.png);  
+        url(../images/images/dark-bg-tablet@2x.jpg);  
     }
   }
 
@@ -525,35 +517,39 @@ body {
     margin-top: 16px;
 }
 
-.footer-button-div {
-    display: flex;
-    justify-content: center;
+@media screen and (max-width: 767px) {
+    .footer-button-div {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .footer-button-icon {
+        margin-left: 16px;
+    }
+    
+    .logotype-link-footer {
+        display: block;
+        text-align: center;
+    }
+    
+    .footer-paragraph {
+        margin-bottom: 72px;
+    }
+    
+    .footer-second-paragraph {
+        margin-bottom: 16px;
+    }
+    
+    .footer-social-list {
+        margin-bottom: 72px;
+    }
+    
+    .footer-suscribe-text {
+        margin-bottom: 16px;
+    }
 }
 
-.footer-button-icon {
-    margin-left: 16px;
-}
 
-.logotype-link-footer {
-    display: block;
-    text-align: center;
-}
-
-.footer-paragraph {
-    margin-bottom: 72px;
-}
-
-.footer-second-paragraph {
-    margin-bottom: 16px;
-}
-
-.footer-social-list {
-    margin-bottom: 72px;
-}
-
-.footer-suscribe-text {
-    margin-bottom: 16px;
-}
 
 
 /* ============== MODAL STYLES ============== */
@@ -935,6 +931,14 @@ body {
 /* ============== TABLET STYLES ============== */
 
 @media screen and (min-width:768px) {
+    .page-header {
+        border-bottom: 1px solid #e7e9fc;
+        box-shadow: 
+        0px 2px 1px rgba(46, 47, 66, 0.08), 
+        0px 1px 1px rgba(46, 47, 66, 0.16), 
+        0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
     .container {
         width: 736;
         margin: 0 auto;
@@ -1040,4 +1044,120 @@ body {
         width: calc((100% - 24px) / 2);
     }
 
+    .our-team-list {
+        display: flex;
+        flex-wrap: wrap; 
+        gap: 72px 24px;
+    }
+
+    .our-team-list-item {
+        width: calc((100% - 24px) / 2);
+    }
+
+    .our-team-list {
+        width: 520px;
+        margin: 0 auto;
+    }
+
+    .portfolio-list {
+        display: flex;
+        flex-wrap: wrap; 
+        gap: 72px 24px;
+    }
+
+    .portfolio-list-item {
+        width: calc((100% - 24px) / 2);
+    }
+
+    .overlay-text {
+        display: none;
+    }
+}
+
+    @media (min-width: 768px) and (max-width: 1157px) {
+       
+        .page-footer .container {
+          padding: 0;
+          margin: 0 auto;
+          display: flex;
+          flex-wrap: wrap;
+          width: 496px;
+          row-gap: 72px;
+        }
+        .tablet-footer {
+          display: flex;
+          gap: 24px;
+        }
+        .footer-paragraph {
+          width: 264px;
+        }
+        .footer-subscribe-text {
+          margin-bottom: 16px;
+          text-align: left;
+        }
+        .footer-subscribe-form {
+          align-items: center;
+          display: flex;
+          gap: 24px;
+        }
+
+        .footer-second-paragraph {
+            text-align: left;
+        }
+
+        .footer-button {
+            margin: 0;
+        }
+
+        .footer-subscribe-input {
+            width: 264px;
+        }
+        
+        .footer-button-icon {
+            margin-left: 16px;
+        }
+    }
+
+/* ============== DESKTOP STYLES ============== */
+
+@media screen and (min-width:1158px) {
+    .container {
+        width: 1158px;
+    }
+
+    .contact-header-list {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    .page-header.container {
+        display: flex;
+    }
+
+    .page-navigation {
+        display: flex;
+        align-items: center;
+    }
+
+    .logotype {
+        margin-right: 72px;
+    }
+
+    .menu {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        margin-right: auto;
+    }
+
+    .menu-link {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    .contact-item {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
 }
