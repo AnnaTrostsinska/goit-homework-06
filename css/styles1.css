@@ -23,7 +23,7 @@ width: 100%;
 }
 
 address {
-    margin-left: auto;
+    margin-left: 0;
 }
 
 .list {
@@ -227,6 +227,7 @@ body {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     margin-bottom: 8px;
+    
 }
 
 .benefits-list-text {
@@ -855,6 +856,14 @@ body {
     margin-bottom: 40px;
 }
 
+.mobile-menu-navigation-list {
+    margin-bottom: auto;
+}
+
+.mobile-menu-container {
+    padding: 0;
+}
+
 .mobile-menu-contacts {
     color: #434455;
     font-style: normal;
@@ -886,7 +895,7 @@ body {
     gap: 40px;
     line-height: 0;
     justify-content: center;
-    margin: 8px 16px 0;
+    margin:  0;
 }
 
 .mobile-social-list-link:hover,
@@ -915,7 +924,7 @@ body {
     margin-bottom: 40px;
 }
 
-.mobile-menu-navigation {
+.mobile-menu-navigation {        зробити відступ до кінця сторінки
     margin-bottom: 168px;
 }
 
@@ -1022,6 +1031,14 @@ body {
         text-transform: none;
         max-width: 496px;
         margin-bottom: 36px;
+        color: #FFF;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 56px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.07;
+        letter-spacing: 1.12px;
     }
 
     .benefits-list {
@@ -1187,6 +1204,10 @@ body {
     .benefits-list-title {
         text-align: left;
         font-weight: 500;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.2; 
+        letter-spacing: 0.02em;
     }
 
     .benefits-list-text {
@@ -1285,10 +1306,12 @@ body {
 }
 
 .footer-button {
-    padding-top: 0;
+    margin: 0;
 }
 
-
+.footer-button-icon {
+    margin-left: 16px;
+}
 
 .footer-subscribe-input {
     width: 264px;
